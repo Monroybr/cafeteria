@@ -1,0 +1,26 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS, Gulp, CSS Grid",
+  "keywords": [
+    "12345"
+  ],
+  "homepage": "https://github.com/Monroybr/cafeteria#readme",
+  "bugs": {
+    "url": "https://github.com/Monroybr/cafeteria/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monroybr/cafeteria.git"
+  },
+  "license": "ISC",
+  "author": "Liseth Monroy",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1"
+  }
+}
