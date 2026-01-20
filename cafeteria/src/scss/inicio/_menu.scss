@@ -10,11 +10,13 @@
 
     @include m.tablet { 
         padding: 15rem 0 20rem 0;
+        background-position: center 5rem, center 92%, 100%;
     }
 
     @include m.desktop { 
         background-size: 50%, 50%, 100%;
-     }
+        background-position: center 5rem, center 90%, 100%;
+    }
 }
 
 .grid-menu{
