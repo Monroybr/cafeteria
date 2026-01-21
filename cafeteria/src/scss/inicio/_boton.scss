@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.btn-scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: v.$btn-size;
+  height: v.$btn-size;
+  background-color: v.$btn-bg;
+  color: v.$blanco;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 7px rgba(#000, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    background-color: v.$secundario;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
