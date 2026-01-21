@@ -98,5 +98,30 @@
         </div>
         <p class="copyright">Todos los derechos reservados © La cafetería.</p>
     </footer>
+    <button class="btn-scroll-top" id="btnScrollTop" title="Subir al inicio">⬆</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("btnScrollTop");
+
+            // Cuando bajamos un poco muestra el botón
+            window.addEventListener("scroll", () => {
+            if (window.scrollY > window.innerHeight / 2) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+            });
+
+            // Al hacer clic sube hasta la barra
+            btn.addEventListener("click", () => {
+            const navbar = document.querySelector("nav"); // tu nav principal
+            if (navbar) {
+                navbar.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+            });
+        });
+    </script>
 </body>
 </html>
